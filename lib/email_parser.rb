@@ -14,7 +14,7 @@ class EmailAddressParser
   def parse
     individual = csv.delete(",") 
     splito = individual.split(" ")
-    #binding.pry
+    
   end  
   
   def save       
