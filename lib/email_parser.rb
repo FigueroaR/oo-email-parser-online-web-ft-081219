@@ -16,6 +16,7 @@ class EmailAddressParser
     array = individual.split(" ")
     array.select do |find|
       find.delete_if( find == find )
+    end 
   end  
   
   def save       
