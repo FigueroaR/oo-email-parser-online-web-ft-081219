@@ -15,7 +15,7 @@ class EmailAddressParser
     individual = csv.delete(",") 
     array = individual.split(" ")
     
-    array.detect{ |word| array.count(word) == word} 
+    array.detect{ |word| word.delete_if( word.count > 1)} 
     
     
   end  
