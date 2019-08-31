@@ -14,8 +14,8 @@ class EmailAddressParser
   def parse
     individual = csv.delete(",") 
     array = individual.split(" ")
-    array.select do |find|
-      find.delete!{ |word| word==csv } 
+    #array.select do |find|
+    array.delete_if{ |word| word==word } 
     end 
     
   end  
