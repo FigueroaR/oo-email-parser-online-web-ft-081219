@@ -16,7 +16,7 @@ class EmailAddressParser
     array = individual.split(" ")
     #array.select do |find|
     array.delete_if{ |word| word==word } 
-    end 
+    
     
   end  
   
