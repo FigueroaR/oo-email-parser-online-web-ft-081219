@@ -14,7 +14,8 @@ class EmailAddressParser
   def parse
     individual = csv.delete(",") 
     splito = individual.split(" ")
-    
+    splito.select do |find|
+      find.delete_if == 
   end  
   
   def save       
